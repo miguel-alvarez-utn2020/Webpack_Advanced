@@ -1,0 +1,45 @@
+{
+    "version": "1.0",
+    "rules": {
+      "codebase": {
+        "ignore": [
+          "node_modules",
+          "build",
+          "dist",
+          ".git",
+          "*.log",
+          "*.lock"
+        ]
+      },
+      "editing": {
+        "indentSize": 2,
+        "maxLineLength": 80,
+        "formatOnSave": true
+      },
+      "suggestions": {
+        "enabled": true,
+        "mode": "inline",
+        "frequency": "high",
+        "languages": [
+          "javascript",
+          "typescript",
+          "html",
+          "css",
+          "scss",
+          "json"
+        ]
+      },
+      "chat": {
+        "temperature": 0.7,
+        "maxTokens": 2000
+      },
+      "security": {
+        "excludePatterns": [
+          "**/*.env",
+          "**/credentials.*",
+          "**/secrets.*"
+        ],
+        "preventSensitiveDataSharing": true
+      }
+    }
+  }

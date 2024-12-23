@@ -1,0 +1,12 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/extensions": "off"
+  },
+  "env": {
+    "browser": true, // Habilita las variables globales del navegador (document, window, etc.).
+    "es2021": true   // Habilita características modernas de JavaScript.
+  }
+}
